@@ -1,5 +1,5 @@
 # 3D Bin Packing
-[![npm version](http://img.shields.io/npm/v/binpackingjs.svg?style=flat)](https://npmjs.org/package/binpackingjs "View this project on npm")
+[![npm version](http://img.shields.io/npm/v/@owens3364/3d-bin-packing.svg?style=flat)](https://npmjs.org/package/@owens3364/3d-bin-packing "View this project on npm")
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
 3D Bin Packing is a fork of [this bin packing implementation](https://github.com/macder/binpackingjs).
