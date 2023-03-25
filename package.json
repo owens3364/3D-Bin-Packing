@@ -1,7 +1,7 @@
 {
   "name": "@owens3364/3d-bin-packing",
   "sideEffects": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Owen Scott <owens3364@gmail.com>",
   "type": "module",
   "scripts": {
