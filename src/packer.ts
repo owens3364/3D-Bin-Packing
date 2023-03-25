@@ -1,8 +1,8 @@
-import Bin from './Bin.js';
+import Bin from './bin.js';
 import Item, {
   StartPosition,
   Axis,
-} from './Item.js';
+} from './item.js';
 
 export default class Packer {
   private _bins: Bin[] = [];

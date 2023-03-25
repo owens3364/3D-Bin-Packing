@@ -62,7 +62,7 @@ export default class Bin extends Box {
    * @return {Array} Rotation types sorted by their score, DESC
    */
   private getBestRotationOrder(item: Item): RotationType[] {
-    const rotationScores = {};
+    const rotationScores: Record<string, number> = {};
 
     // Score all rotation types
     for (const rotation of item.allowedRotations) {
@@ -71,8 +71,8 @@ export default class Bin extends Box {
 
     // Sort the rotation types (index of scores object) DESC
     // and ensure Int values (Object.keys returns strings)
-    return Object.keys(rotationScores).sort((a, b) => {
-      return rotationScores[b] - rotationScores[a];
+    return Object.keys(rotationScores).sort((a: string, b: string) => {
+      return (rotationScores[b] as number) - (rotationScores[a] as number);
     }).map(Number);
   }
 
@@ -102,7 +102,7 @@ export default class Bin extends Box {
         }
       }
 
-      log('try to putItem', fit, 'item', item.toString(), 'box', this.toString());
+      log('try to putItem', fit.toString(), 'item', item.toString(), 'box', this.toString());
 
       if (fit) {
         break;
